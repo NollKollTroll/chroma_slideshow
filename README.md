@@ -14,7 +14,7 @@ Put all the files from the release-binary folder on an SD-card, load the file **
 ## Creating your own slideshow
 
 First, gather the pictures and convert them to 256x384 with whatever program of your choice. Save the files as uncompressed 24-bit BMP.<br>
-Use the bmp2nkt program to convert the BMP-files to the format usable for the ZX81 slideshow.<br>
+Use the command line program **bmp2nkt** to convert the BMP-files to the format usable for the ZX81 slideshow.<br>
 Open the file **show.asm** in ZX-IDE and change the BASIC-lines loading the pictures, but do not change the load address.<br>
 Compile the program.<br>
 Put all the converted pictures and the file **show.p** on an SD-card.<br>
@@ -28,6 +28,29 @@ My trusty go-to emulator EightyOne v1.29 works well with this program but needs 
 - Colour: Chroma<br>
 - ZXpand+: ON<br>
 - TV-emulation / Advanced effects: OFF
+
+## Building bmp2nkt for Linux
+
+Developing and building bmp2nkt I used Kdevelop in Linux Mint, load the bmp2nkt project folder and compile.
+
+## Building bmp2nkt for windows
+
+For anyone (future me) that wants to build the bmp2nkt program for windows, it requires Mingw-w64. Follow these steps:
+
+```
+cd bmp2nkt
+mkdir build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=../win64_cross_compile_toolchain.txt -DCMAKE_BUILD_TYPE=Release ..
+make
+```
+
+You will also need the MingW dynamic link libraries found here in Linux Mint:
+
+```
+/usr/lib/gcc/x86_64-w64-mingw32/9.3-win32/libgcc_s_seh-1.dll
+/usr/lib/gcc/x86_64-w64-mingw32/9.3-win32/libstdc++-6.dll
+```
 
 ## History
 
