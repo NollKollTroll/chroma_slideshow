@@ -418,7 +418,7 @@ int main(int argc, char **argv)
         for (int16_t column = cStart; column != cStop; column += cStep)
         {            
             //cout << to_string(column) << endl;
-            bestWorkingErrorOctet.total = HUGE_VAL_F32; 
+            bestWorkingErrorOctet.total = HUGE_VALF;
             for (int16_t FGCount = palette[paletteNr].first; FGCount <= palette[paletteNr].last; ++FGCount)
             {
                 for (int16_t BGCount = FGCount + 1; BGCount <= palette[paletteNr].last; ++BGCount)
