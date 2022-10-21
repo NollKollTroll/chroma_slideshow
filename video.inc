@@ -15,7 +15,6 @@ const SCREEN_HEIGHT_RASTERS           = 384 //y-resolution in lines
 const SCREEN_HEIGHT_RASTERS_PER_FIELD = SCREEN_HEIGHT_RASTERS / 2
 const TV_STD_50HZ                     = 312
 const TV_STD_60HZ                     = 262
-const TV_STD                          = TV_STD_60HZ
 const VSYNC_RASTERS                   = 4
 const WASTED_RASTERS                  = 2
 const TOTAL_BLANK_RASTERS             = TV_STD - WASTED_RASTERS - SCREEN_HEIGHT_RASTERS_PER_FIELD - VSYNC_RASTERS

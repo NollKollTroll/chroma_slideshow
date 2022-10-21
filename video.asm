@@ -28,8 +28,10 @@ JpOpenAStringFile:
 JpMoveAttributes:
         jp      MoveAttributes //+18
         
-        include "zxpand.inc"
+        const TV_STD = TV_STD_60HZ
+
         include "video.inc"
+        include "zxpand.inc"
 }
 
 //--------------------------
