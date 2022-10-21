@@ -1,0 +1,29 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x0e\x00b\x00m\x00p\x002\x00n\x00k\x00t)
+
+[CMake]
+Build Directory Count=2
+Current Build Directory Index-Host System=1
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=build
+Build Type=Release
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=-O3
+Install Directory=/usr/local
+Runtime=Host System
+
+[CMake][CMake Build Directory 1]
+Build Directory Path=/home/adam/work/ZX81/FASMW-ZX/Source/chroma_slideshow/bmp2nkt/build
+Build Type=Debug
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+Runtime=Host System
+
+[Project]
+VersionControlSupport=kdevgit
