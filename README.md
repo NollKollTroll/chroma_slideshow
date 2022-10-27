@@ -13,7 +13,7 @@ Put all the files from the release-binary folder on an SD-card, load the file **
 
 ## Creating your own slideshow
 
-First, gather the pictures and convert them to 256x384 with whatever program of your choice. Save the files as uncompressed 24-bit BMP.<br>
+First, gather the pictures and resize them to 256x384 with whatever program of your choice. Save the files as uncompressed 24-bit BMP.<br>
 Use the command line program **bmp2nkt** to convert the BMP-files to the format usable for the ZX81 slideshow.<br>
 Open the file **show.asm** in ZX-IDE and change the BASIC-lines loading the pictures, but do not change the load address.<br>
 Compile the program.<br>
@@ -33,7 +33,7 @@ My trusty go-to emulator EightyOne v1.29 works well with this program but needs 
 
 Developing and building bmp2nkt I used Kdevelop in Linux Mint, load the bmp2nkt project folder and compile.
 
-## Building bmp2nkt for windows
+## Building bmp2nkt for Windows
 
 For anyone (future me) that wants to build the bmp2nkt program for windows, it requires Mingw-w64. Follow these steps:
 
@@ -58,7 +58,8 @@ This is a program I originally wrote in 2019. It was shown at a Swedish retro co
 
 ## Future
 
-I hope many slideshows will be created and shown using our lovely little door-stoppers!
+I hope many slideshows will be created and shown using our lovely little door-stoppers!<br>
+Maybe someone wants to create a version of the converter with a GUI?
 
 ## License
 

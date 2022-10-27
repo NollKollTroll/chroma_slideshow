@@ -23,7 +23,7 @@ include '..\..\SINCL-ZX\ZX81.INC' // definitions of constants
 	END _asm
 
 //Init stuff
-AUTORUN:
+//AUTORUN:
      10 LOAD "SCRSTACK.BIN;32768" //Load the video stack
 //The slideshow stack
     100 LOAD "DRG.NKT;36864"
